@@ -1,0 +1,4 @@
+cvSimple
+*.o
+*~
+.DS_Store
