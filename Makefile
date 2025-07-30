@@ -2,7 +2,7 @@ SUNDIALS_DIR ?= /usr/local
 CC := gcc
 CFLAGS := -O2 -I$(SUNDIALS_DIR)/include
 LDFLAGS := -L$(SUNDIALS_DIR)/lib -Wl,-rpath,$(SUNDIALS_DIR)/lib
-LDLIBS := -lsundials_cvode -lsundials_nvecserial -lm
+LDLIBS := -lsundials_cvode -lsundials_nvecserial -lsundials_core -lm
 
 SRC := cvSimple.c
 TARGET := cvSimple
